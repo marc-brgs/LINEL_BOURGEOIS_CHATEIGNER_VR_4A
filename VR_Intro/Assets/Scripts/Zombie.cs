@@ -9,13 +9,20 @@ public class Zombie : MonoBehaviour
     public int maxHP;
     public int currentHP;
     public int damage;
-    
-    private float walkSpeed = .7f;
+    public float walkSpeed;
+
+    public Zombie(int HP, int damage)
+    {
+        maxHP = HP;
+        currentHP = HP;
+        this.damage = damage;
+    }
     
     // Start is called before the first frame update
     void Start()
     {
         GM = GameManager.Instance;
+        walkSpeed = .7f;
     }
 
     // Update is called once per frame
