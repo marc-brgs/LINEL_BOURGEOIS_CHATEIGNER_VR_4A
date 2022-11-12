@@ -8,9 +8,12 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get { return instance; } }
     
     public GameObject player;
+    public List<GameObject> zombies;
     private int wave = 0;
-    private int zombieLeft = 0;
+    public int zombieLeft = 0;
 
+    private int initialNumberOfZombies = 4;
+    
     private void Awake() 
     {
         if (instance != null && instance != this)
@@ -26,13 +29,26 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        randomSummon(10);
+        // RandomSummon(10);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (zombieLeft == 0)
+        {
+            NextWave();
+        }
         
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            foreach (var zombie in zombies)
+            {
+                Destroy(zombie);
+                zombieLeft--;
+            }
+            zombies.Clear();
+        }
     }
 
     void PauseGame()
@@ -45,7 +61,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
     }
     
-    void randomSummon(int zombieNumber)
+    void RandomSummon(int zombieNumber)
     {
         for (int i = 0; i < zombieNumber; i++)
         {
@@ -54,8 +70,33 @@ public class GameManager : MonoBehaviour
             int randZ = UnityEngine.Random.Range(-19, 19);
             randX = randX < 5 && randX > -5 ? randX * 2 : randX;
             randZ = randZ < 5 && randZ > -5 ? randZ * 2 : randZ;
-            Instantiate(zombie, new Vector3(randX,0.5f,randZ), Quaternion.identity);
+            zombies.Add(Instantiate(zombie, new Vector3(randX,0.5f,randZ), Quaternion.identity));
+            zombieLeft++;
         }
-        
+    }
+
+    void BossSummon()
+    {
+        var zombie = Resources.Load<GameObject>("Zombie");
+        int randX = UnityEngine.Random.Range(-19, 19);
+        int randZ = UnityEngine.Random.Range(-19, 19);
+        randX = randX < 5 && randX > -5 ? randX * 2 : randX;
+        randZ = randZ < 5 && randZ > -5 ? randZ * 2 : randZ;
+        zombies.Add(Instantiate(zombie, new Vector3(randX,0.5f,randZ), Quaternion.identity));
+        zombieLeft++;
+    }
+
+    void NextWave()
+    {
+        wave++;
+        if (wave % 5 == 0)
+        {
+            BossSummon();
+        }
+        else
+        {
+            RandomSummon(initialNumberOfZombies + wave);
+        }
+        Debug.Log("Wave " + wave + ", zombies " + zombieLeft);
     }
 }

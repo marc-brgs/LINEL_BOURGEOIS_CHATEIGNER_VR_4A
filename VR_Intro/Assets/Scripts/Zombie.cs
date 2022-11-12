@@ -22,7 +22,6 @@ public class Zombie : MonoBehaviour
     void Start()
     {
         GM = GameManager.Instance;
-        walkSpeed = .7f;
     }
 
     // Update is called once per frame
@@ -34,6 +33,13 @@ public class Zombie : MonoBehaviour
     void Walk()
     {
         var step =  walkSpeed * Time.deltaTime; // calculate distance to move
-        transform.position = Vector3.MoveTowards(transform.position, GM.player.transform.position, step);
+        // transform.position = Vector3.MoveTowards(transform.position, GM.player.transform.position, step);
+        this.GetComponent<Rigidbody>().velocity =
+            -Vector3.MoveTowards(transform.position, GM.player.transform.position, step).normalized * walkSpeed;
+    }
+
+    public void Die()
+    {
+        Destroy(this);
     }
 }
