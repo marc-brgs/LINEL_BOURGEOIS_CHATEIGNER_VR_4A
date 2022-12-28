@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Zombie : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Zombie : MonoBehaviour
     public int currentHP;
     public int damage;
     public float walkSpeed;
+
+    public NavMeshAgent agent;
 
     public Zombie(int HP, int damage)
     {
@@ -32,10 +35,14 @@ public class Zombie : MonoBehaviour
 
     void Walk()
     {
+        /*
         var step =  walkSpeed * Time.deltaTime; // calculate distance to move
         // transform.position = Vector3.MoveTowards(transform.position, GM.player.transform.position, step);
         this.GetComponent<Rigidbody>().velocity =
             -Vector3.MoveTowards(transform.position, GM.player.transform.position, step).normalized * walkSpeed;
+            */
+        
+        agent.SetDestination(GM.player.transform.position);
     }
 
     public void Die()

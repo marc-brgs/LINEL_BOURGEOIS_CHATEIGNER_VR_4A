@@ -117,6 +117,7 @@ MonoBehaviour:
   currentHP: 100
   damage: 10
   walkSpeed: 2
+  agent: {fileID: 4911850756597470525}
 --- !u!54 &9166413048023511631
 Rigidbody:
   m_ObjectHideFlags: 0
