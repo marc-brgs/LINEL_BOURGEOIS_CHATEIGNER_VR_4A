@@ -43,6 +43,7 @@ public class Zombie : MonoBehaviour
             */
         
         agent.SetDestination(GM.player.transform.position);
+        agent.speed = walkSpeed;
     }
 
     public void Die()
