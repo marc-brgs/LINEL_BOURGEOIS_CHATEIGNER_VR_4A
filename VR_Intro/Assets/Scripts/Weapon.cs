@@ -20,9 +20,10 @@ public class Weapon : MonoBehaviour
         interactableWeapon = GetComponent<XRGrabInteractable>();
     }
 
-    public void Shoot()
+    public virtual void Shoot()
     {
         ApplyRecoil();
+        Debug.Log("Shoot");
     }
 
     private void ApplyRecoil()

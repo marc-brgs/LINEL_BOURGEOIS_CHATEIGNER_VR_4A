@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Pistol : Weapon
 {
+    [SerializeField] private GameObject bulletPrefab;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +18,9 @@ public class Pistol : Weapon
         
     }
 
-    public void Shoot()
+    public override void Shoot()
     {
-        Debug.Log("Shoot");
+        base.Shoot();
+        GameObject projectileInstance = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
     }
 }
