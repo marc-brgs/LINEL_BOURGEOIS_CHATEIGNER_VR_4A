@@ -171,7 +171,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 795806203}
-  m_Colliders: []
+  m_Colliders:
+  - {fileID: 1365988183}
+  - {fileID: 485268220}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2265,7 +2267,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 795806203}
-  m_Colliders: []
+  m_Colliders:
+  - {fileID: 669325005}
+  - {fileID: 1604742289}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -4138,7 +4142,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 795806203}
-  m_Colliders: []
+  m_Colliders:
+  - {fileID: 1762104969}
+  - {fileID: 902762676}
+  - {fileID: 2058607084}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
