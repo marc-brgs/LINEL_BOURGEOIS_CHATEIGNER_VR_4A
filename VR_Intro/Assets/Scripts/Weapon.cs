@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
+[RequireComponent(typeof(Rigidbody))]
 public class Weapon : MonoBehaviour
 {
     [SerializeField] protected float shootingForce;
@@ -31,7 +32,12 @@ public class Weapon : MonoBehaviour
         rigidbody.AddRelativeForce(Vector3.back * recoilForce, ForceMode.Impulse);
     }
 
-    public float getDamage()
+    public float GetShootingForce()
+    {
+        return shootingForce;
+    }
+    
+    public float GetDamage()
     {
         return damage;
     }
