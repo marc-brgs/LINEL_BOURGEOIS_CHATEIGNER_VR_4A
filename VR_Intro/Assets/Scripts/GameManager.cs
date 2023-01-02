@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
 
     void BossSummon()
     {
-        var zombie = Resources.Load<GameObject>("Zombie");
+        var zombie = Resources.Load<GameObject>("Sonic");
         int randX = UnityEngine.Random.Range(-19, 19);
         int randZ = UnityEngine.Random.Range(-19, 19);
         randX = randX < 5 && randX > -5 ? randX * 2 : randX;
