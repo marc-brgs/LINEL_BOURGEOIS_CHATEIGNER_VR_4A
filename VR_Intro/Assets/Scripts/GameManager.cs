@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     {
         if (zombieLeft == 0)
         {
+            zombies.Clear();
             NextWave();
         }
         
