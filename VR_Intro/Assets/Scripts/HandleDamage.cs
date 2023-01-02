@@ -7,10 +7,13 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class HandleDamage : MonoBehaviour, ITakeDamage
 {
+    private GameManager GM;
+    
     private Rigidbody rigidbody;
     
     private void Awake()
     {
+        GM = GameManager.Instance;
         rigidbody = GetComponent <Rigidbody>();
     }
 
@@ -18,5 +21,6 @@ public class HandleDamage : MonoBehaviour, ITakeDamage
     {
         rigidbody.AddForce(projectile.transform.forward * weapon.GetShootingForce(), ForceMode.Impulse);
         GetComponent<Zombie>().Die();
+        GM.zombieLeft--;
     }
 }
