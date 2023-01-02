@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3e1ccb5-4401-4877-9a20-21c4067e1a50" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sonic/No Name.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sonic/No Name.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR_Intro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR_Intro/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sonic.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sonic.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
     </list>
