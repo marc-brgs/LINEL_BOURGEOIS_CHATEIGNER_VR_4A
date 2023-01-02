@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: adb84655f5f44da4e98c73c921248058
+guid: dafa5a6b0af79e14280954e794a1d099
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable:
   - first:
-      74: 187134680046838805
-    second: GLTF_created_0|mixamo.com_GLTF_created_0
+      74: -8928351471818444634
+    second: C4D Animation Take
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -38,7 +38,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.002
+    globalScale: 0.3
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -91,7 +91,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.000020000001
+    globalScale: 0.003
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
