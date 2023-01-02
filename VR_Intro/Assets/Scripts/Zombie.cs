@@ -48,6 +48,6 @@ public class Zombie : MonoBehaviour
 
     public void Die()
     {
-        Destroy(this);
+        Destroy(this.gameObject);
     }
 }
