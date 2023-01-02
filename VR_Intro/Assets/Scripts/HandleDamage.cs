@@ -23,5 +23,6 @@ public class HandleDamage : MonoBehaviour, ITakeDamage
         GetComponent<Zombie>().Die(); // kill
 
         GM.zombieLeft--;
+        GM.numZombiesIndicator.text = "ZOMBIES: " + GM.zombieLeft + "/" + GM.totalWaveZombie; // update UI
     }
 }
