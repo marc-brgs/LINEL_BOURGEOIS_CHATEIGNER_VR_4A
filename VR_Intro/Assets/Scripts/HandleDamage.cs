@@ -19,8 +19,10 @@ public class HandleDamage : MonoBehaviour, ITakeDamage
 
     public void TakeDamage(Weapon weapon, Projectile projectile, Vector3 contactPoint)
     {
-        rigidbody.AddForce(projectile.transform.forward * weapon.GetShootingForce(), ForceMode.Impulse);
-        GetComponent<Zombie>().Die();
+        rigidbody.AddForce(projectile.transform.forward * weapon.GetShootingForce(), ForceMode.Impulse); // knockback
+        GetComponent<Zombie>().Die(); // kill
+
         GM.zombieLeft--;
+        GM.numZombiesIndicator.text = "ZOMBIES: " + GM.zombieLeft + "/" + GM.totalWaveZombie; // update UI
     }
 }

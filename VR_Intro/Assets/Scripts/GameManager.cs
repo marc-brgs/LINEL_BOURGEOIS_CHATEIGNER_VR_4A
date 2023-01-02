@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     private static GameManager instance;
     public static GameManager Instance { get { return instance; } }
+
+    public TextMeshProUGUI waveIndicator;
+    public TextMeshProUGUI numZombiesIndicator;
     
     public GameObject player;
     public List<GameObject> zombies;
     private int wave = 0;
     public int zombieLeft = 0;
-
+    public int totalWaveZombie = 0;
+    
     private int initialNumberOfZombies = 4;
     
     private void Awake() 
@@ -99,5 +104,9 @@ public class GameManager : MonoBehaviour
             RandomSummon(initialNumberOfZombies + wave);
         }
         Debug.Log("Wave " + wave + ", zombies " + zombieLeft);
+        
+        totalWaveZombie = zombieLeft;
+        waveIndicator.text = "WAVE " + wave;
+        numZombiesIndicator.text = "ZOMBIES: " + zombieLeft + "/" + totalWaveZombie;
     }
 }
