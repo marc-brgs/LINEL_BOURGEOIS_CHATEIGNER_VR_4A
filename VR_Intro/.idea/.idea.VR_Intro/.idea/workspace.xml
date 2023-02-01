@@ -2,10 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3e1ccb5-4401-4877-9a20-21c4067e1a50" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Sonic/Sonic.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Sonic/Sonic.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Soviet komissar/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Soviet komissar/Materials/sovietknuklekomissar color.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Soviet komissar/Materials/sovietknuklekomissar color.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR_Intro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR_Intro/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sonic/No Name 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sonic/No Name 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sonic/No Name 2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sonic/No Name 2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sonic/No Name.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Sonic/No Name.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sonic/StandingSonic.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sonic/StandingSonic.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sonic/StandingSonic2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sonic/StandingSonic2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sonic/ugandan sonic.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Sonic/ugandan sonic.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Knuckles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Knuckles.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Sonic.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sonic.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sonic.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sonic.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HandleDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HandleDamage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,10 +36,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HandleDamage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TakeDamage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,6 +98,7 @@
       <workItem from="1668258445481" duration="4723000" />
       <workItem from="1672407539337" duration="4522000" />
       <workItem from="1672665370775" duration="844000" />
+      <workItem from="1675241476855" duration="6148000" />
     </task>
     <servers />
   </component>
@@ -97,6 +118,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

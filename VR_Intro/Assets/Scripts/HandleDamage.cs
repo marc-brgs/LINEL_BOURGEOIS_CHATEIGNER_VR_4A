@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 [RequireComponent(typeof(Zombie))]
 [RequireComponent(typeof(Rigidbody))]
@@ -19,7 +20,7 @@ public class HandleDamage : MonoBehaviour, ITakeDamage
 
     public void TakeDamage(Weapon weapon, Projectile projectile, Vector3 contactPoint)
     {
-        rigidbody.AddForce(projectile.transform.forward * weapon.GetShootingForce(), ForceMode.Impulse);
+        Debug.Log("Hit");
         GetComponent<Zombie>().Die();
         GM.zombieLeft--;
     }
