@@ -574,7 +574,7 @@ MonoBehaviour:
   shootingForce: 1
   bulletSpawn: {fileID: 296094103}
   recoilForce: 2
-  damage: 20
+  damage: 50
   bulletPrefab: {fileID: -4185402974793085439, guid: 512493d0fe666a54dace7507b8c6d72c,
     type: 3}
 --- !u!114 &363059520
@@ -1110,7 +1110,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &567259221
 GameObject:
@@ -2719,7 +2719,7 @@ MonoBehaviour:
   shootingForce: 1
   bulletSpawn: {fileID: 1143018711}
   recoilForce: 2
-  damage: 20
+  damage: 50
   bulletPrefab: {fileID: -4185402974793085439, guid: 512493d0fe666a54dace7507b8c6d72c,
     type: 3}
 --- !u!1 &795806202
@@ -3079,7 +3079,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 9f5a24a380916d14db9775daab4fe333,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}

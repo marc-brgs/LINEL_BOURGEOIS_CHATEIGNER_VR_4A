@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -6360045437023889021}
   - component: {fileID: 7656774152793459007}
   - component: {fileID: 1034988198}
+  - component: {fileID: 216567938031951882}
   m_Layer: 0
   m_Name: Sonic
   m_TagString: Untagged
@@ -140,7 +141,7 @@ MonoBehaviour:
   maxHP: 500
   currentHP: 500
   damage: 10
-  walkSpeed: 1.5
+  walkSpeed: 0.5
   agent: {fileID: -6360045437023889021}
 --- !u!136 &1034988198
 CapsuleCollider:
@@ -150,9 +151,21 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5667357347706696534}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 1.06
   m_Height: 3.2532816
   m_Direction: 1
   m_Center: {x: 0, y: 1.6345711, z: -0.3}
+--- !u!114 &216567938031951882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5667357347706696534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d5809d30b93d094f8273a190f7716fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

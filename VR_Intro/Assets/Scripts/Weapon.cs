@@ -10,7 +10,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] protected float shootingForce;
     [SerializeField] protected Transform bulletSpawn;
     [SerializeField] private float recoilForce;
-    [SerializeField] private float damage;
+    [SerializeField] private int damage;
     
     private Rigidbody rigidbody;
     private XRGrabInteractable interactableWeapon;
@@ -37,7 +37,7 @@ public class Weapon : MonoBehaviour
         return shootingForce;
     }
     
-    public float GetDamage()
+    public int GetDamage()
     {
         return damage;
     }
