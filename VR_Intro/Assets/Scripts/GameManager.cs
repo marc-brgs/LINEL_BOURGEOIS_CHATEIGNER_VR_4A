@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI waveIndicator;
     public TextMeshProUGUI numZombiesIndicator;
-    
+
+    public GameObject camera;
     public GameObject player;
     public List<GameObject> zombies;
     private int wave = 0;

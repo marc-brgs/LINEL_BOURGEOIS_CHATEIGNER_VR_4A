@@ -4417,6 +4417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveIndicator: {fileID: 2066181184}
   numZombiesIndicator: {fileID: 1101991022}
+  camera: {fileID: 1486932591}
   player: {fileID: 976790011}
   zombies: []
   zombieLeft: 0
