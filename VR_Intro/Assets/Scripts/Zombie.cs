@@ -21,6 +21,8 @@ public class Zombie : MonoBehaviour, ITakeDamage
     public AudioClip dawaeSound;
     public AudioSource audioSource;
 
+    public float dist;
+
     public Zombie(int HP)
     {
         maxHP = HP;
@@ -40,11 +42,18 @@ public class Zombie : MonoBehaviour, ITakeDamage
         
         healthBarUI.transform.LookAt(GM.camera.transform.position);
 
-        if (dawae == false && Vector3.Distance(this.transform.position, GM.player.transform.position) < 2)
+        dist = Vector3.Distance(this.transform.position, GM.player.transform.position);
+
+        if (dawae == false && dist < 2)
         {
             dawae = true;
             audioSource.clip = dawaeSound;
             audioSource.Play();
+        }
+
+        if (dist > 3)
+        {
+            dawae = false;
         }
     }
 
