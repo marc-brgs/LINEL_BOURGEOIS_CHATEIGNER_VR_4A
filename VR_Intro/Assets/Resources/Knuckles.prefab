@@ -407,6 +407,9 @@ MonoBehaviour:
   healthBarUI: {fileID: 3642087531640062417}
   slider: {fileID: 3642087530747234937}
   agent: {fileID: 2727709257622184099}
+  dawae: 0
+  dawaeSound: {fileID: 8300000, guid: ea84262b5be965c44955ba625183d42f, type: 3}
+  audioSource: {fileID: -5021138682578000611}
 --- !u!82 &9066303382606631180
 AudioSource:
   m_ObjectHideFlags: 0
@@ -515,7 +518,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 416801474299226722, guid: d933c11140ff81b49b3dfa1077404d9a,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: ea84262b5be965c44955ba625183d42f, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.269
   m_Pitch: 1

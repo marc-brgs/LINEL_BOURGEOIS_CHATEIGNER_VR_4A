@@ -16,7 +16,11 @@ public class Zombie : MonoBehaviour, ITakeDamage
     public Slider slider;
     
     public NavMeshAgent agent;
-    
+
+    public bool dawae = false;
+    public AudioClip dawaeSound;
+    public AudioSource audioSource;
+
     public Zombie(int HP)
     {
         maxHP = HP;
@@ -35,6 +39,13 @@ public class Zombie : MonoBehaviour, ITakeDamage
         Walk();
         
         healthBarUI.transform.LookAt(GM.camera.transform.position);
+
+        if (dawae == false && Vector3.Distance(this.transform.position, GM.player.transform.position) < 2)
+        {
+            dawae = true;
+            audioSource.clip = dawaeSound;
+            audioSource.Play();
+        }
     }
 
     void Walk()
