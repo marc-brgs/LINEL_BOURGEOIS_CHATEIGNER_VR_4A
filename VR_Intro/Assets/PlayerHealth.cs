@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
     public static PlayerHealth instance;
     public int maxHealth = 100;
     public int currentHealth;
+    public bool canRegen;
 
     public HealthBar healthBar;
     
@@ -24,23 +25,45 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        canRegen = true;
 
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H))
+
+        if (canRegen == true)
         {
-            TakeDamage(20);
+            StartCoroutine(PlayerRegen());
+            Debug.Log(currentHealth);
         }
+        
     }
     
-    
-
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
     }
+
+    public void Regenerate()
+    {
+        if (currentHealth <= maxHealth -3)
+        {
+            currentHealth += 3;
+            healthBar.SetHealth(currentHealth);
+        }
+    }
+
+
+    public IEnumerator PlayerRegen()
+    {
+        canRegen = false;
+        Regenerate();
+        yield return new WaitForSeconds(1f);
+        canRegen = true;
+        
+    }
+    
 }

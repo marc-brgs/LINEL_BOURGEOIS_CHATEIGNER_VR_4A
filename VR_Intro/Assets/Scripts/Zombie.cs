@@ -98,7 +98,6 @@ public class Zombie : MonoBehaviour, ITakeDamage
     {
         if (Random.Range(0, 5) > 1)
         {
-            Debug.Log("ATTACK");
             canAttack = false;
             PlayerHealth.instance.TakeDamage(power);
             yield return new WaitForSeconds(1f);
