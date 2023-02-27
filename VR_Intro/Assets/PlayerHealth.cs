@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -35,9 +36,13 @@ public class PlayerHealth : MonoBehaviour
         if (canRegen == true)
         {
             StartCoroutine(PlayerRegen());
-            Debug.Log(currentHealth);
         }
-        
+
+
+        if (currentHealth <= 0)
+        {
+            PlayerDeath();
+        }
     }
     
 
@@ -54,6 +59,11 @@ public class PlayerHealth : MonoBehaviour
             currentHealth += 3;
             healthBar.SetHealth(currentHealth);
         }
+    }
+
+    public void PlayerDeath()
+    {
+        SceneManager.LoadScene("Menu");
     }
 
 

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f3e1ccb5-4401-4877-9a20-21c4067e1a50" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/Assets/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Zombie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Zombie.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +95,7 @@
       <workItem from="1675100032920" duration="598000" />
       <workItem from="1675242002837" duration="806000" />
       <workItem from="1677336542695" duration="4055000" />
-      <workItem from="1677505280575" duration="4836000" />
+      <workItem from="1677505280575" duration="5246000" />
     </task>
     <servers />
   </component>
