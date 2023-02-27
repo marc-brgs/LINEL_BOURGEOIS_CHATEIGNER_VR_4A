@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f3e1ccb5-4401-4877-9a20-21c4067e1a50" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR_Intro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR_Intro/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerHealth.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +15,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/CameraRotation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HandleDamage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TakeDamage.cs" root0="FORCE_HIGHLIGHTING" />
@@ -94,7 +95,7 @@
       <workItem from="1675100032920" duration="598000" />
       <workItem from="1675242002837" duration="806000" />
       <workItem from="1677336542695" duration="4055000" />
-      <workItem from="1677505280575" duration="610000" />
+      <workItem from="1677505280575" duration="1281000" />
     </task>
     <servers />
   </component>
