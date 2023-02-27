@@ -404,6 +404,8 @@ MonoBehaviour:
   maxHP: 100
   currentHP: 100
   walkSpeed: 2
+  canAttack: 0
+  power: 5
   healthBarUI: {fileID: 3642087531640062417}
   slider: {fileID: 3642087530747234937}
   agent: {fileID: 2727709257622184099}
