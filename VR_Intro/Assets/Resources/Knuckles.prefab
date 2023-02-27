@@ -403,7 +403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 100
   currentHP: 100
-  walkSpeed: 2
+  walkSpeed: 1.8
   canAttack: 0
   power: 5
   healthBarUI: {fileID: 3642087531640062417}
