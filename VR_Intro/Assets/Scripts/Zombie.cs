@@ -12,6 +12,12 @@ public class Zombie : MonoBehaviour, ITakeDamage
     public int currentHP;
     public float walkSpeed;
 
+    private bool isInRange = false;
+    public bool canAttack;
+
+    public int power;
+    
+    
     public GameObject healthBarUI;
     public Slider slider;
     
@@ -22,6 +28,7 @@ public class Zombie : MonoBehaviour, ITakeDamage
     public AudioSource audioSource;
 
     public float dist;
+    
 
     public Zombie(int HP)
     {
@@ -33,6 +40,7 @@ public class Zombie : MonoBehaviour, ITakeDamage
     void Start()
     {
         GM = GameManager.Instance;
+        canAttack = true;
     }
 
     // Update is called once per frame
@@ -55,6 +63,14 @@ public class Zombie : MonoBehaviour, ITakeDamage
         {
             dawae = false;
         }
+
+        if (dist < 1)
+        {
+            if (canAttack == true)
+            {
+                StartCoroutine(DealDamage());
+            }
+        }
     }
 
     void Walk()
@@ -74,6 +90,19 @@ public class Zombie : MonoBehaviour, ITakeDamage
             Die();
             GM.zombieLeft--;
             GM.numZombiesIndicator.text = "ZOMBIES: " + GM.zombieLeft + "/" + GM.totalWaveZombie; // update UI
+        }
+    }
+
+
+    public IEnumerator DealDamage()
+    {
+        if (Random.Range(0, 5) > 1)
+        {
+            Debug.Log("ATTACK");
+            canAttack = false;
+            PlayerHealth.instance.TakeDamage(power);
+            yield return new WaitForSeconds(1f);
+            canAttack = true;
         }
     }
     

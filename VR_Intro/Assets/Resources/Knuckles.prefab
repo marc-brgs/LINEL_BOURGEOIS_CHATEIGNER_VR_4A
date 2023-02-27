@@ -404,12 +404,15 @@ MonoBehaviour:
   maxHP: 100
   currentHP: 100
   walkSpeed: 2
+  canAttack: 0
+  power: 5
   healthBarUI: {fileID: 3642087531640062417}
   slider: {fileID: 3642087530747234937}
   agent: {fileID: 2727709257622184099}
   dawae: 0
   dawaeSound: {fileID: 8300000, guid: ea84262b5be965c44955ba625183d42f, type: 3}
   audioSource: {fileID: -5021138682578000611}
+  dist: 0
 --- !u!82 &9066303382606631180
 AudioSource:
   m_ObjectHideFlags: 0
